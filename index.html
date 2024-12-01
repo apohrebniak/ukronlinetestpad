@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Українізація online test pad</title>
+    </head>
+    <body>
+        <script type="module">
+            import init, { handle_event } from "./pkg/online_test_pad_ukr.js";
+
+            document
+                .getElementById("fileInput")
+                .addEventListener("change", function (event) {
+                    init().then(() => {
+                        handle_event(event);
+                    });
+                });
+        </script>
+        <h2>
+            Вибери .zip файл. Українізований .zip файл завантажиться автоматично
+        </h2>
+        <input type="file" id="fileInput" accept=".zip" />
+    </body>
+</html>
