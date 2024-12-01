@@ -30,7 +30,7 @@ jobs:
           cargo install wasm-bindgen-cli
           cargo install wasm-pack
       - name: wasm-pack
-        run: wasm-pack build --target web --no-pack --release
+        run: wasm-pack build --target web --no-pack --release --no-opt
       - name: Copy stuff
         run: |
           mkdir deploy
