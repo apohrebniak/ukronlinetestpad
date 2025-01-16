@@ -191,7 +191,7 @@ fn modify_file(bytes: Vec<u8>) -> Result<Vec<u8>, Error> {
 }
 
 #[rustfmt::skip]
-const PATTERNS: [&str; 14] = [
+const PATTERNS: [&str; 15] = [
     // Phrases
     "Далее",
     "Завершить",
@@ -204,6 +204,7 @@ const PATTERNS: [&str; 14] = [
     "Количество баллов (правильных ответов)",
     "Максимально возможное количество баллов",
     "Процент",
+    "из",
 
     // Links
     "Powered by",
@@ -212,7 +213,7 @@ const PATTERNS: [&str; 14] = [
 ];
 
 #[rustfmt::skip]
-const REPLACEMENTS: [&str; 14] = [
+const REPLACEMENTS: [&str; 15] = [
     // Phrases
     "Далі",
     "Закінчити",
@@ -225,6 +226,7 @@ const REPLACEMENTS: [&str; 14] = [
     "Кількість балів (правильних відповідей)",
     "Максимальна кількість балів",
     "Відсоток",
+    "з",
 
     // Links
     "",
